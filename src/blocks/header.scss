@@ -1,0 +1,153 @@
+.header {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  background-image: url(/images/sunset.jpg);
+  background-position-y: -810px;
+  margin-bottom: 400px;
+
+  background-size: 120em;
+  background-color: rgb(26, 26, 26);
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 80%;
+
+    background-color: rgb(77, 255, 77);
+  }
+
+  &__link {
+    padding: 41px 0;
+    width: 300px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 400ms;
+    font-weight: 500;
+    letter-spacing: 1px;
+
+    color: white;
+
+    &--1 {
+      position: relative;
+
+      &::after {
+        content: url(../images/icons8-question-mark-90.png);
+        position: absolute;
+        top: 0;
+        right: 100px;
+        visibility: hidden;
+        transition: transform 300ms;
+      }
+
+      &:hover {
+        border-top-right-radius: 100px;
+        border-top-left-radius: 100px;
+
+        &::after {
+          content: url(../images/icons8-question-mark-90.png);
+          position: absolute;
+          right: 100px;
+          transform: translateY(-100px);
+          visibility: visible;
+        }
+      }
+    }
+
+    &--2 {
+      position: relative;
+
+      &::after {
+        content: url(../images/icons8-question-mark-90.png);
+        position: absolute;
+        top: 0;
+        right: 100px;
+        visibility: hidden;
+        transition: transform 300ms;
+      }
+
+      &:hover {
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+
+        &::after {
+          content: url(../images/icons8-question-mark-90.png);
+          position: absolute;
+          right: 100px;
+          transform: translateY(-100px);
+          visibility: visible;
+        }
+      }
+    }
+
+    &--3 {
+      position: relative;
+
+      &::after {
+        content: url(../images/icons8-question-mark-90.png);
+        position: absolute;
+        top: 0;
+        right: 100px;
+        visibility: hidden;
+        transition: transform 300ms;
+      }
+
+      &:hover {
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+
+        &::after {
+          content: url(../images/icons8-question-mark-90.png);
+          position: absolute;
+          right: 100px;
+          transform: translateY(-100px);
+          visibility: visible;
+        }
+      }
+    }
+
+    &:hover {
+      background-color: rgb(31, 122, 31);
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 50px;
+    width: 100px;
+    height: 100px;
+
+    color: black;
+    background-color: white;
+
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 300ms;
+
+    &:hover {
+      transform: scale(1.2);
+      color: rgb(77, 255, 77);
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+    text-align: center;
+  }
+}

@@ -1,0 +1,27 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background-color: rgb(58, 58, 58);
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.title {
+  padding: 50px 0;
+  font-size: 50px;
+  font-weight: 900;
+  font-style: italic;
+  color: white;
+}
+
+.info {
+  color: white;
+}
