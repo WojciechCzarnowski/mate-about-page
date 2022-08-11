@@ -12,6 +12,54 @@
   <body class="page">
 
     <header class="header" id="home">
+
+      <div class="header__bubbles">
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__particle"></div>
+        <div class="header__border-1"></div>
+        <div class="header__border-2"></div>
+      </div>
+
+      <div class="header__portfolio">
+        <img
+        src="../src/images/portfolio-text.png"
+        alt="portfolio text"
+        class="header__fancyText">
+      </div>
+
+
+      <svg>
+        <defs>
+          <filter id="blob">
+            <fegaussianblur
+              in="SourceGraphic"
+              stdDeviation="10"
+            >
+            </fegaussianblur>
+            <fecolormatrix in="blob" mode="matrix"
+              values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 30 -15" >
+            </fecolormatrix>
+            <feblend in="SourceGraphic">
+            </feblend>
+          </filter>
+        </defs>
+      </svg>
+
       <div class="header__container">
         <a
           href="#home"
@@ -58,13 +106,15 @@
             Age: 23<br>
             Nationality: Polish<br>
             English proficiency: C2<br>
-            Living in: Warsaw, Poland<br>
+            Living in: Warsaw, Poland<br><br>
+            Likes: Guns, Snakes, Memes<br>
+            Dislikes: Seafood, Pineapples,<br> having no money
           </p>
         </div>
         <div class="about__right">
           <p class="about__info info">Hi!<br>
-            My name is Wojciech, I'm a <strong>Front-end</strong>  developer (as you might have guessed), and if You're reading this, I've probably sent You my CV with a link to this little personalised page. although fairly small, I hope it will serve as a good insight into who I am, and what I can offer. So about myself: I'm a 23 year old polish dude, who took up programming because it seemed like a good way for someone creative to use their brains for something other than memes (which I collect with an enthusiasm of a broke bachelor finding leftover pizza in a box after the party).
-            What I like most about front-end is how rewarding it feels to see the effect of your work and how free you are to mold and change whatever you made into something different. The possibilities are pretty much endless. And when you get into the flow, you can just do it for the fun of it. So, this is who I am, and what I like about what I do the most.
+            My name is Wojciech, I'm a <strong>Frontend</strong>  developer (as you might have guessed), and if You're reading this, I've probably sent You my CV with a link to this little personalised page. So about myself: I'm a 23 year old polish dude, former warehouse worker, delivery driver and recently and most fondly - a translator, who took up programming because it seemed like a good way for someone creative to use their brains for something other than memes (which I collect with an enthusiasm of a broke bachelor scavenging leftover pizza after the party).<br><br>
+            What I like most about frontend is how rewarding it feels to see the effect of your work and how free you are to mold and change whatever you made into something different. The possibilities are pretty much endless. And when you get into the flow, you can just do it for the fun of it. So, this is who I am, and what I like about coding the most.
           </p>
         </div>
 
@@ -87,8 +137,10 @@
       <div class="job__container">
         <h1 class="job__title title">What am I looking for?</h1>
         <p class="job__info info">
-          All the necessary information /
-          pictures / card go here
+          I'm looking for a <strong>Frontend position</strong>, preferably <strong>junior</strong>, that would let me set my roots in the industry and learn <strong>useful skills</strong> and gain <strong>commercial experience</strong>. It's not to say I plan to abandon ship as soon as I get enough experience, but I would appreciate having options for the future.
+          <br>
+          <br>
+          If I don't suit your needs at the moment, please refer me to someone, who could use someone like me.
         </p>
       </div>
     </section>

@@ -8,6 +8,10 @@
 
   background-color: $dark-gray;
 
+  &__top {
+    height: 150px;
+  }
+
   &__title {
     display: block;
     width: 100%;
