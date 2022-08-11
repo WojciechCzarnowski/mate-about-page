@@ -39,7 +39,8 @@ a {
 }
 
 strong {
-  color: green;
+  color: $light-green;
+  letter-spacing: 1px;
 }
 
 .title {
@@ -52,4 +53,5 @@ strong {
 
 .info {
   color: white;
+  font-size: 24px;
 }
