@@ -33,6 +33,10 @@
     border-radius: 50px;
     transition: all 300ms;
 
+    @include forPhone {
+      margin-left: 20px;
+    }
+
     &:hover {
       transform: scale(1.2);
       box-shadow: 5px 12px 30px -12px $light-green;
@@ -49,6 +53,11 @@
     border-radius: 100px;
     border: 2px solid $light-green;
     border-style: dashed;
+
+    @include forPhone {
+      width: 150px;
+      height: 150px;
+    }
   }
 
   &__bio {
@@ -60,10 +69,28 @@
     width: 60%;
     padding-right: 50px;
     padding-left: 100px;
+
+    @include forPhone {
+      width: 80%;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
   }
 
   &__info {
     text-align: start;
     font-size: 24px;
+
+    @include deskSmall {
+      font-size: 20px;
+    }
+
+    @include forTablet {
+      font-size: 17px;
+    }
+
+    @include forPhone {
+      font-size: 15px;
+    }
   }
 }
